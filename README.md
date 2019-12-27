@@ -1,1 +1,1 @@
-"# git-pushing-automation" 
+# Git Pushing Automation
