@@ -1,7 +1,8 @@
 # Git Pushing Automation
-  ## Installation
-    ### Download push.exe.
-    ### Add it to system variables. 
+  ## Installation:
+    1. Download push.exe
+    2. Add it to system variables. 
 
-  ## Using
-    ### Use command >push
+  ## Using:
+    ● Use command "push" to push to origin/master branch.
+    ● Use command "push -r" to specify the remote repo and the branch.
