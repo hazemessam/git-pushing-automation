@@ -1,7 +1,7 @@
 # Git Pushing Automation
   ## Installation:
     1. Download push.exe
-    2. Add it to system variables. 
+    2. Add its path to system variables. 
 
   ## Using:
     ● Use command "push" to push to origin/master branch.
