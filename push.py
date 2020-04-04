@@ -9,14 +9,19 @@ def ck_where_to_push(auto):
         branch = input('branch: ')
 
 def ck_args():
-    if len(sys.argv) == 2:
-        if sys.argv[1] == '-r':
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '-h':
+            print('Usgae:\n\tpush to origin/master: push\n\tpush to remote/branch: push [-r]')
+            sys.exit()
+        elif sys.argv[1] == '-r':
             auto = input('Pushing to origin/master? (y or n): ')
             ck_where_to_push(auto)
+
 
 repo = 'origin'
 branch = 'master'
 
+ck_args()
 commit_msg = input('commit msg: ')
 
 print('Staging...')
@@ -25,8 +30,6 @@ os.system('git status')
 
 print('Committing...')
 os.system(f'git commit -m "{commit_msg}"')
-
-ck_args()
 
 print('\nPushing...')
 os.system(f'git push {repo} {branch}')
